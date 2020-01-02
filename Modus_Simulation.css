@@ -1,0 +1,51 @@
+html, body {margin:0;padding:0;height:100%;}
+html {
+    background: #888888;
+}
+#fetchbg .modus {
+    width: 96%;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+#fetchbg {
+    width: 15%;
+    height: 100%;
+    background: #000000;
+    overflow: scroll;
+    float:left;
+}
+#equipment {
+    float: left;
+    background:#666666;
+    height: 75%;
+    width: 85%
+}
+#inventory {
+    float: left;
+    height: 25%;
+    width: 85%;
+    overflow: scroll;
+}
+#inventoryline {
+    float: top;
+    height: 3%;
+    width: 100%;
+    background: #000000;
+}
+#titlebar {
+    color:#ffffff;
+    float: top;
+    height: 10%;
+    width: 100%;
+    background: #222222;
+}
+#inventory .modus{
+    height: 80%;
+    padding-top: 0.5%;
+    padding-left: 1%;
+}
+.card {
+    height: 80%;
+    padding-top: 0.5%;
+    padding-left: 1%;
+}

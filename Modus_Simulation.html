@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body onload="setBase()">
+        <link rel="stylesheet" href="file:///C:/Users/1121b/Desktop/Work/The%20Sylladex/Modus_Simulation/Modus_Simulation.css">
+        <div id="fetchbg" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img class="modus" id="stack" ondragstart="drag(event)" src="Modi\Fetch_Modus_Stack.png"/>
+            <img class="modus" id="queue" ondragstart="drag(event)" src="Modi\Fetch_Modus_Queue.png"/>
+            <img class="modus" id="tree"  ondragstart="drag(event)" src="Modi\Fetch_Modus_Tree.png"/>
+            <img class="modus" id="hashmap"  ondragstart="drag(event)" src="Modi\Fetch_Modus_Hashmap.png"/>
+            <img class="modus" id="memory"  ondragstart="drag(event)" src="Modi\Fetch_Modus_Memory.png"/>
+            <img class="modus" id="array"  ondragstart="drag(event)" src="Modi\Fetch_Modus_Array.png"/>
+         </div>
+         <div id=equipment></div>
+
+         <div id="inventory" ondrop="drop(event)" ondragover="allowDrop(event)">
+             <div id=inventoryline></div>
+             <div id=titlebar>
+                sylladex :: captchalogue deck
+             </div>
+             <img class="card" id="null" src="Modi\Null_Captcha_Card.png"/>
+             <img class="card" id="null" src="Modi\Null_Captcha_Card.png"/>
+             <img class="card" id="null" src="Modi\Null_Captcha_Card.png"/>
+             <img class="card" id="null" src="Modi\Null_Captcha_Card.png"/>
+         </div>
+
+         <script>
+             function allowDrop(ev) {
+               ev.preventDefault();
+             }
+
+             function drag(ev) {
+               ev.dataTransfer.setData("text", ev.target.id);
+             }
+
+             function drop(ev) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+             }
+             var inventorycolor = "#333333";
+             var inventory = document.getElementById("inventory");
+             inventory.style.background = inventorycolor;
+         </script>
+    </body>
+</html>
