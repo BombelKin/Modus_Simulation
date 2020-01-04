@@ -24,7 +24,6 @@ html {
     float: left;
     height: 25%;
     width: 85%;
-    overflow: scroll;
 }
 #inventoryline {
     float: top;
@@ -39,13 +38,14 @@ html {
     width: 100%;
     background: #222222;
 }
-#inventory .modus{
+.firstcard {
     height: 80%;
     padding-top: 0.5%;
-    padding-left: 1%;
+    float: left;
 }
 .card {
     height: 80%;
     padding-top: 0.5%;
     padding-left: 1%;
+    float: left;
 }
