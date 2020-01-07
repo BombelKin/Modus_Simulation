@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head></head>
-    <body>
+    <body onload="centre()">
         <link rel="stylesheet" href="Modus_Simulation.css">
         <div id="fetchbg">
             <img class="modus" id="stack" ondragstart="drag(event)" src="Modi\Fetch_Modus_Stack.png"/>
@@ -19,21 +19,40 @@
              <div id=inventoryline></div>
              <div id=titlebar>
                 sylladex :: captchalogue deck
-                <button style="float:right;">+</button>
-                <button style="float:right;">-</button>
+                <button style="float:right;" onclick="addCard()">+</button>
+                <button style="float:right;" onclick="subCard()">-</button>
              </div>
              <img class="firstcard" src="Modi\Captcha_Card.png"/>
-             <img class="card" src="Modi\Captcha_Card.png"/>
-             <img class="card" src="Modi\Captcha_Card.png"/>
-             <img class="card" src="Modi\Captcha_Card.png"/>
          </div>
          <script>
+            /*Card centering*/
+            function centre() {
           let list = document.getElementById("inventory");
-          let num = (45.65-(4.83*((list.childNodes.length-7)/2))).toFixed(2);
+          let num = (45.65-(4.83*((list.childNodes.length-7)))).toFixed(2);
           console.log(list.childNodes.length);
           let result = toString(num)+"%";
           let cardone = document.getElementsByClassName("firstcard");
           cardone[0].style=`padding-left:${num}%;`
+            }
+            /*Card addition and subtraction*/
+          function addCard(){
+            let list = document.getElementById("inventory");
+            if(list.childNodes.length<16){
+                let card = document.createElement('img');
+                card.setAttribute('class', 'card');
+                card.setAttribute('src', "Modi\\Captcha_Card.png");
+                document.getElementById("inventory").appendChild(card);
+                centre()
+            }
+          }
+          function subCard(){
+            let inv = document.getElementById("inventory");
+            if(inv.childNodes.length>7){
+                inv.removeChild(inv.lastChild);
+                centre();
+            }
+          }
+            /*Inventory colour*/
           var inventorycolor = "#333333";
           var inventory = document.getElementById("inventory");
           inventory.style.background = inventorycolor;
