@@ -18,6 +18,6 @@ It's a folder(duh) that contains different weapon specibi. Weapon specibi are de
   <img height=100px src="Modi\Captcha_Card.png" alt='appRef'>
 </p>
 <ol type="A">
-  <li>a</li>
-  <li>b</li>
+  <li>List of all the *current* modi availible to equip.</li>
+  <li></li>
 </ol>
