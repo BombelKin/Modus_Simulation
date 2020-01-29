@@ -14,3 +14,6 @@ In Homestuck, fetch modi are the functions that people use to log and "fetch" it
 
 It's a folder(duh) that contains different weapon specibi. Weapon specibi are decks that can only hold their "type" of weapon. It's whole purpose is to make accesing weapons easier. 
 ## Using the Application
+<p align="center">
+  <img width="350" height="208" src="https://raw.githubusercontent.com/encode/httpx/master/docs/img/logo.jpg" alt='HTTPX'>
+</p>
