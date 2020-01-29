@@ -18,6 +18,13 @@ It's a folder(duh) that contains different weapon specibi. Weapon specibi are de
   <img height=100px src="Modi\Captcha_Card.png" alt='appRef'>
 </p>
 <ol type="A">
-  <li>List of all the *current* modi availible to equip.</li>
-  <li></li>
+  <li>List of all the <i>current</i> modi availible to equip.</li>
+  <li>Captcha deck</li>
+  <li>add/subtract card buttons</li>
+  <li>Modus visualization</li>
+  <li>Currently equipped modi</li>
+  <li>Currently equipped items</li>
+  <li>Strife Modus</li>
+  <li>Search window for loggable items</li>
 </ol>
+
